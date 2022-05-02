@@ -1,180 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBERNETIC'S</title>
-	<link rel="shortcut icon" href="https://raw.githubusercontent.com/cybernetic-tech-maniac/site/main/img.ico">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-.team {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.snip1336 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1336 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1336 figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.snip1336 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+.snip1336 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.snip1336 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+* {
+  box-sizing: border-box;
 }
 
-.team .team-item {
-    position: relative;
-    margin-bottom: 30px;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  /* height: fit-content; */
+  align-items: center;
+  background-color: #212429;
 }
 
-.team .team-img {
-    position: relative;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
 }
 
-.team .team-img img {
-    width: 100%;
-    transition: .3s;
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
 }
 
-.team .team-item:hover img {
-    transform: scale(1.1);
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.body{
+    background-color: #212429 !important;
 }
 
-.team .team-text {
-    position: relative;
-    width: 100%;
-    padding: 35px 30px 30px 30px;
-    text-align: center;
-    background: #202C45;
-    border-radius: 0 0 5px 5px;
-    transition: .5s;
-}
 
-.team .team-item:hover .team-text {
-    background: #E81C2E;
-}
-
-.team .team-text h2 {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.team .team-text p {
-    margin: 0;
-    color: #ffffff;
-}
-
-.team .team-social {
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    top: -20px;
-    left: 0;
-    text-align: center;
-    font-size: 0;
-}
-
-.team .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0 3px;
-    padding: 7px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff;
-    background: #202C45;
-    border-radius: 40px;
-    transition: .5s;
-}
-
-.team .team-item:hover .team-social a {
-    background: #E81C2E;
-}
-
-.team .team-social a:hover {
-    color: #202C45;
-}
-</style>
+    </style>
 </head>
 <body>
-	<div class="team">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>DEVELOPERS</p>
-                    
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/naveen(1).jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Naveen Kumar</h2>
-                                <p>UI/UX</p>
-                               
-                            </div>
-                        </div>
-                    </div>
-					 <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/bhadri-karthi.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Bhadri Karthik</h2>
-                                <p>Web Designer/Payment Gateway</p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/loganathan.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Loganathan</h2>
-                                <p>Web Designer</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/damu.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Damu</h2>
-                                <p>Hosting / Server, Domain, and Website Maintanence / Asset Management</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-					 <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/pragadesh.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Pragadeesh</h2>
-                                <p>Poster Making</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                   
-                    </div>
-                </div>
-            </div>
-  </body>
+    <div class="flex-container">
+    <figure class="snip1336">
+        <img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-2.jpg" alt="sample87" />
+        <figcaption>
+          <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/naveen-1.jpg" alt="profile-sample4" class="profile" />
+          <h2>Naveen <span>UI/UX</span></h2>
+         
+          
+        </figcaption>
+      </figure>
+      <figure class="snip1336 hover"><img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-10.jpg" alt="sample74" />
+        <figcaption>
+          <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/bhadri-karthi-1.jpg" alt="profile-sample2" class="profile" />
+          <h2>Badrinath<span>PaymentPortal </span></h2>
+         
+        
+        </figcaption>
+      </figure>
+      <figure class="snip1336"><img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-6.jpg" alt="sample69" />
+        <figcaption>
+          <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/loganathan.jpg" alt="profile-sample5" class="profile" />
+      
+          <h2>Loganathan<span>Web designing<span></h2>
+        </figcaption>
+      </figure>
+      <figure class="snip1336"><img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-8.jpg" alt="sample69" />
+        <figcaption>
+          <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/damu-1.jpg" alt="profile-sample5" class="profile" />
+          <h2>Damu<span>Hosting/Server/Maintanence</span></h2>
+         
+        
+        </figcaption>
+      </figure>
+      <figure class="snip1336"><img src="https://newevolutiondesigns.com/images/freebies/cool-4k-wallpaper-4.jpg" alt="sample69" />
+        <figcaption>
+          <img src="https://github.com/cybernetic-tech-maniac/assets/raw/main/pragadesh.jpg" alt="profile-sample5" class="profile" />
+          <h2>Pragadesh<span>Poster designing</span></h2>
+          
+
+        </figcaption>
+      </figure>
+    </div>
+</body>
 </html>
